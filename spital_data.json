@@ -1,0 +1,23 @@
+{
+  "spital": "Spitalul Municipal Cluj",
+  "pacienti": [
+    {
+      "id": 1,
+      "nume": "Popa",
+      "prenume": "Andrei",
+      "diagnostic": "Hipertensiune"
+    },
+    {
+      "id": 2,
+      "nume": "Stan",
+      "prenume": "Elena",
+      "diagnostic": "Diabet"
+    },
+    {
+      "id": 3,
+      "nume": "Marin",
+      "prenume": "George",
+      "diagnostic": "Hipertensiune"
+    }
+  ]
+}

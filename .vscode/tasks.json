@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compileaza Spital",
+            "type": "shell",
+            "command": "C:\\mingw64\\bin\\g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "src/Angajat.cpp",
+                "src/Medic.cpp",
+                "src/Asistent.cpp",
+                "src/Pacient.cpp",
+                "src/Programare.cpp",
+                "src/Factura.cpp",
+                "src/FacturaFactory.cpp",
+                "src/Logger.cpp",
+                "src/Spital.cpp",
+                "src/main.cpp",
+                "-o",
+                "spital.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Ruleaza Spital",
+            "type": "shell",
+            "command": ".\\spital.exe",
+            "group": "build",
+            "dependsOn": "Compileaza Spital"
+        }
+    ]
+}
